@@ -9,7 +9,7 @@ PawHub was the fourth and final project of the General Assembly Software Enginee
 * Be a complete product which most likely means multiple relationships and CRUD functionality for at least a couple of models
 * Implement thoughtful user stories/wireframes that are significant enough to help you know which features are core MVP and which you can cut
 * Have a visually impressive design
-* Be deployed online so it's publicly accessibl
+* Be deployed online so it's publicly accessible
 
 ## Collaborators
 * [Alex Chan](https://github.com/achan81)
@@ -32,7 +32,7 @@ PawHub was the fourth and final project of the General Assembly Software Enginee
 ## Deployed Version
 [View the deployed version of the app](https://paw-hub.netlify.app/)
 
-![Screen Grab of home page](./assets/pawHubHome.png)
+![Screen Grab of home page](./src/assets/pawHubHome.png)
 
 ## Planning
 For this project we were given the opportunity to choose if we wanted to work in teams or solo. The four of us got on really well during the course and hadn't worked together before, so we decided to work together for our final project. From the very initial conversation, we all set out what we personally wanted to achieve from our final project. We all agreed that our main goal was to create a smooth, slick and polished app that was mobile compatible. We also wanted to do a website clone as none of us had cloned anything for a previous project. Not only would this be a great time saver as it takes away having to design the look of a website, but also it shows that we can built an app according to a client's desires.
@@ -43,14 +43,14 @@ We knew we wanted to use a CSS framework that none of us had used before as a le
 
 We started by creating an ERD diagram to plan the backend models and establish the relationships between them. We wanted to push ourselves and our SQL database abilities by creating many-to-many relationships:
 
-![Screen Grab of ERD diagram](./assets/ERD.png)
+![Screen Grab of ERD diagram](./src/assets/ERD.png)
 
 We then created a virtual whiteboard using Miro which enabled us to share notes, create to-do lists and plan our days as a group:
 
-![Screen Grab of Miro](./assets/miro.png)
+![Screen Grab of Miro](./src/assets/miro.png)
 
 ### Work Split
-As we were a group of 4 for the first time, it was important to us for the work to be split evenly across both backend and frontend. During the project we worked while on a Zoom call and shared code snippets on Slack in order to work as collaboratively as possible
+As we were a group of 4 for the first time, it was important to us for the work to be split evenly across both backend and frontend. During the project we worked while on a Zoom call and shared code snippets on Slack in order to work as collaboratively as possible.
 ## Backend
 When it came to the backend we were aiming to get it done as soon as possible so we could crack on with the frontend and make our project as aesthetically pleasing as possible. We took turns coding while sharing our screen and this allowed each of us to code review as we went along. As using Django on a project was new to all of us it was critical to have the eyes and support of our teammates at this stage. Once each person was done, we would merge our branch and push it into the development branch for the next person to pull the most up to date code.
 
@@ -189,9 +189,9 @@ const handleLoadMore = () => {
 ```
 Below you can see the original 'Rehoming' page from the Dog's Trust website followed by my clone page of it:
 
-![Screen Grab of dog's trust rehoming page](./assets/rehoming.png)
+![Screen Grab of dog's trust rehoming page](./src/assets/rehoming.png)
 
-![Screen Grab of clone of rehoming page](./assets/rehomingClone.png)
+![Screen Grab of clone of rehoming page](./src/assets/rehomingClone.png)
 
 ### Show Page
 Once I finished the index page, I focused on the show page, which displayed an individual dog and all their information.
@@ -243,12 +243,12 @@ function Carousel(props) {
 ```
 Using conditional rendering I was also able to display whether the dog is able to live with other dogs, cats and children. This feature does not appear on the page at all if the dog cannot live with either of the three:
 
-![Screen Grab of clone of important information of dog page](./assets/mayLiveWith.png)
+![Screen Grab of clone of important information of dog page](./src/assets/mayLiveWith.png)
 
 On the show page, if the user is logged in, they can favourite or unfavourite the dog by clicking the heart on their profile. Favourited dogs will then appear in the user's profile under the favourites section.
 
 Logged in users can also ask questions about the dogs and these appear underneath the dog's image and display the question and the username of the asker:
-![Screenshot of questions feature](./assets/questions.png)
+![Screenshot of questions feature](./src/assets/questions.png)
 
 ### Error Handling and Loading
 For Error Handling, we decided to use images sourced from the [HTTP Status Dog website](https://httpstatusdogs.com/) to improve user experience. Using the error reponse I was able to conditionally render the appropriate image to show the specific image:
@@ -269,11 +269,11 @@ function Error({ error }) {
   )
 }
 ```
-![Image of 500 error dog](./assets/error.png)
+![Image of 500 error dog](./src/assets/error.png)
 
 To make the user experience better, we also used a 'Loading' component to be displayed when the page was still loading and there was no error.
 
-![Gif of loading page](./assets/loadingScreenshot.gif)
+![Gif of loading page](./src/assets/loadingScreenshot.gif)
 
 ### Notable Frontend Components
 #### Newsletter
